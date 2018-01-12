@@ -10,8 +10,7 @@
             <field name="name"/>
             <field name="responsible_id"/>
            </group>
-          </sheet>
-          <notebook>
+           <notebook>
             <page string="Description">
               <field name="description"/>
             </page> 
@@ -27,6 +26,8 @@
               </field>
             </page>
           </notebook>
+          </sheet>
+          
         </form>
       </field>
     </record>
