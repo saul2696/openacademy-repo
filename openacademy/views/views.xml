@@ -65,12 +65,15 @@
                     <group>
                         <field name="name"/>
                         <field name="start_date"/>
+                        <field name="datetime_test"/>
                         <field name="duration"/>
                         <field name="seats"/>
+                        <field name="taken_seats" widget="progressbar"/>
                         <field name="instructor_id"/>
                         <field name="course_id"/>
                         <label for="attendees_ids"/>
                         <field name="attendees_ids" nolabel="1"/>
+                        <field name="active"/>
                     </group>
                 </sheet>
             </form>
@@ -87,6 +90,7 @@
               <field name="start_date"/>
               <field name="duration"/>
               <field name="seats"/>
+              <field name="taken_seats" widget="progressbar"/> 
               <field name="instructor_id"/>
               <field name="course_id"/>
             </tree>
@@ -111,15 +115,18 @@
         <field name="view_mode">tree,form</field>
     </record>
     
-<!-- Top menu item -->
+<!-- Top menu item Open Academy -->
     
     <menuitem name="Open Academy" id="main_openacademy_menu"/>
     
-    <!-- menu categories -->
+    <!-- menu de categorias Open Academy -->
     
     <menuitem name="Open Academy" id="openacademy_menu" parent="main_openacademy_menu"/>
+
+    <!-- menu Open Academy > Cursos --> 
     <menuitem name="Cursos" id="courses_menu" parent="openacademy_menu" action="course_list_action"/>
     
+    <!-- menu Open Academy > Sessions -->
     <menuitem name="Sessions" id="session_menu" parent="openacademy_menu" action="session_list_action"/>
 
      
